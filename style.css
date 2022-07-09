@@ -3,8 +3,13 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-/* Nav bar */
+body{
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+/* Nav bar 
+and also styling for hover features */
 .navbar{
     display: flex;
     justify-content: center;
@@ -36,14 +41,126 @@
 }
 
 /* Home Section */
+
 #home{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    padding-top: 15%;
+}
+.wrapper{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-#home::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url('img1.jpeg') no-repeat center center/cover;
+
+.main-title{
+    padding-bottom: 3%;
+    font-size: 50px;
+    
+}
+
+/* hover features for the hire me button */
+.btn{
+    padding: 5% 15%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: .6s ease;
+    font-size: 24px;
+    font-family: century;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+}
+
+#about{
+    padding-top: 30%;
+    display: flex;
+    font-size: 20px;
+}
+
+#about-image{
+    width: 20%;
+}
+
+.headings{
+    margin-bottom: 9%;
+}
+
+.portfolio{
+    margin-top: 50%;
+    font-size: 40px;
+}
+
+.portfolio-boxes{
+    display: flex;
+    flex-direction: row;
+    height: 60%;
+    width: 100%;
+    /* border: 1px solid; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    box-shadow: 0px 0px 20px white;
+}
+
+.box:hover{
+    box-shadow: 0px 0px 20px red;
+}
+#first-box{
+    height: 225px;
+    width: 300px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+
+.services{
+    margin-top: 600px;
+    font-size: 40px;
+}
+
+.contact-me{
+    margin-top: 600px;
+    font-size: 40px;
+}
+/* media queries to make the page responsive  */
+@media screen and (max-width: 800px){
+    .portfolio-boxes{
+        flex-direction: column;
+    }
+    .box{
+        margin-bottom: 50px;
+
+    }
+}
+@media screen and (max-width: 590px) {
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar{
+        justify-content: flex-end;
+    }
+    .navbar ul li a:hover{
+        background-color: transparent;
+        color: white;
+        box-shadow: none;
+    }
+}
+@media screen and (max-width: 460px) {
+    .wrapper{
+        display: flex;
+        align-items: flex-start;
+    }
 }
