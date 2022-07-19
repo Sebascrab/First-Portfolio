@@ -18,6 +18,7 @@ and also styling for hover features */
     position: sticky;
     top: 0;
 }
+/* all of this styling is for my nav bar allowing to hover over and see which box you are over, and also to make sure it goes along with the dark theme */
 .navbar ul{
     display: flex;
     list-style: none;
@@ -40,7 +41,7 @@ and also styling for hover features */
     box-shadow: 0 0 10px;
 }
 
-/* Home Section */
+/*  this is where I learned to style my home section making sure that the button is correctly spaced with my name   */
 
 #home{
     width: 100vw;
@@ -60,7 +61,7 @@ and also styling for hover features */
     
 }
 
-/* hover features for the hire me button */
+/*  this is all of the styling for the button including the hover area */
 .btn{
     padding: 5% 15%;
     background-color: transparent;
@@ -117,6 +118,7 @@ and also styling for hover features */
 .box:hover{
     box-shadow: 0px 0px 20px red;
 }
+/* first box was unique from the other two boxes in that I made it larger since it actually has a project in it */
 #first-box{
     height: 225px;
     width: 300px;
@@ -135,7 +137,7 @@ img{
     margin-top: 600px;
     font-size: 40px;
 }
-/* media queries to make the page responsive  */
+/* I learned different media queres to make sure that my page is responseive at 800px, 590px, and also 460px where I saw it needed. Especially for the navbar, and portfolio  */
 @media screen and (max-width: 800px){
     .portfolio-boxes{
         flex-direction: column;
