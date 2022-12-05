@@ -6,4 +6,4 @@ Hello everyone, this is my portfolio page for module two's homework assignment. 
 
 ![image of my portfolio](assets/images/Module-Two-Screenshot.png)
 
-https://github.com/Sebascrab/Module_Two_Homework_Alexander_Tischner
+Deployed: https://sebascrab.github.io/First-Portfolio/
